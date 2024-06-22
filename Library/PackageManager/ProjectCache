@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: E:/Act_Demo/Packages/manifest.json
+    m_FilePath: "F:/u3d\u9879\u76EE/act/ACT/Packages/manifest.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638546379602981584
-    m_Hash: 2284735443
+      ticks: 638546679987769600
+    m_Hash: 2691204792
   m_LockFileStatus:
-    m_FilePath: E:/Act_Demo/Packages/packages-lock.json
+    m_FilePath: "F:/u3d\u9879\u76EE/act/ACT/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638546379603719658
-    m_Hash: 3613286759
+      ticks: 638546680375145818
+    m_Hash: 2161829508
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: E:/Act_Demo/Packages
-m_EditorVersion: 2022.3.16f1 (d2c21f0ef2f1)
+m_ProjectPath: "F:/u3d\u9879\u76EE/act/ACT/Packages"
+m_EditorVersion: 2022.3.33f1c1 (ea5182f68133)
 m_ResolvedPackages:
-- packageId: com.unity.cinemachine@2.9.7
+- packageId: com.unity.cinemachine@2.10.0
   testable: 0
   isDirectDependency: 1
-  version: 2.9.7
+  version: 2.10.0
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.cinemachine@2.9.7
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.cinemachine@2.10.0"
   assetPath: Packages/com.unity.cinemachine
   name: com.unity.cinemachine
   displayName: Cinemachine
@@ -36,7 +36,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: cinematography
-  type: asset
+  type: 
   description: "Smart camera tools for passionate creators. \n\nNew starting from
     2.7.1: Are you looking for the Cinemachine menu? It has moved to the GameObject
     menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy Asset Store version
@@ -118,12 +118,9 @@ m_ResolvedPackages:
     - 3.0.0-pre.6
     - 3.0.0-pre.7
     - 3.0.0-pre.8
-    - 3.0.0-pre.9
     - 3.0.1
     - 3.1.0
     compatible:
-    - 2.9.5
-    - 2.9.7
     - 2.10.0
     - 3.0.0-pre.3
     - 3.0.0-pre.4
@@ -131,10 +128,9 @@ m_ResolvedPackages:
     - 3.0.0-pre.6
     - 3.0.0-pre.7
     - 3.0.0-pre.8
-    - 3.0.0-pre.9
     - 3.0.1
     - 3.1.0
-    recommended: 2.9.7
+    recommended: 2.10.0
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -174,35 +170,36 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638191355130000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/index.html
+  datePublishedTicks: 638451680320000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.10/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
-    revision: 46485ca80113434766f2b256525bb98def548fb9
+    revision: 3b55bae0f41b1048cc2080391ac3d4eb1c22b7ef
     path: 
   unityLifecycle:
-    version: 2.9.5
+    version: 2.10.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.collab-proxy@2.0.0
+  fingerprint: 
+- packageId: com.unity.collab-proxy@2.3.1
   testable: 0
   isDirectDependency: 1
-  version: 2.0.0
+  version: 2.3.1
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.collab-proxy@2.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.collab-proxy@2.3.1"
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -211,11 +208,10 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Editor
-  type: asset
-  description: The Version Control package gives you the ability to use either Collaborate
-    or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
-    (beta), a Plastic SCM subscription is required. Learn more about how you can
-    get started for free by visiting plasticscm.com.
+  type: 
+  description: The package gives you the ability to use Unity Version Control in
+    the Unity editor. To use Unity Version Control, a subscription is required. Learn
+    more about how you can get started for free by visiting https://unity.com/solutions/version-control
   status: 0
   errors: []
   versions:
@@ -292,9 +288,8 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.3.1
     compatible:
-    - 2.2.0
     - 2.3.1
-    recommended: 2.2.0
+    recommended: 2.3.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -305,6 +300,7 @@ m_ResolvedPackages:
   - collaborate
   - collaboration
   - control
+  - devops
   - plastic
   - plasticscm
   - source
@@ -315,35 +311,36 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638095491550000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.0/manual/index.html
+  datePublishedTicks: 638448201880000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: a1b1151e0c90bc327ea95678473c1f3a935b2c9e
+    revision: 613362ccb4468f55ee42e0a35809fb9a61f3f8f1
     path: 
   unityLifecycle:
-    version: 2.2.0
+    version: 2.3.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.feature.development@1.0.1
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.feature.development@1.0.1"
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -393,7 +390,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.27
+    version: 3.0.28
   - name: com.unity.ide.vscode
     version: 1.2.5
   - name: com.unity.editorcoroutines
@@ -401,14 +398,14 @@ m_ResolvedPackages:
   - name: com.unity.performance.profile-analyzer
     version: 1.2.2
   - name: com.unity.testtools.codecoverage
-    version: 1.2.4
+    version: 1.2.5
   - name: com.unity.settings-manager
     version: 2.0.1
   keywords: []
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -431,12 +428,205 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.ide.rider@3.0.28
+  testable: 0
+  isDirectDependency: 1
+  version: 3.0.28
+  source: 1
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.ide.rider@3.0.28"
+  assetPath: Packages/com.unity.ide.rider
+  name: com.unity.ide.rider
+  displayName: JetBrains Rider Editor
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The JetBrains Rider Editor package provides an integration for using
+    the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
+    .csproj files for code completion and auto-discovery of installations.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.2
+    - 1.0.6
+    - 1.0.8
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2-preview
+    - 1.1.2-preview.2
+    - 1.1.3-preview.1
+    - 1.1.4-preview
+    - 1.1.4
+    - 1.2.0-preview
+    - 1.2.1
+    - 2.0.0-preview
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.5
+    - 2.0.7
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    - 3.0.4
+    - 3.0.5
+    - 3.0.6
+    - 3.0.7
+    - 3.0.9
+    - 3.0.10
+    - 3.0.12
+    - 3.0.13
+    - 3.0.14
+    - 3.0.15
+    - 3.0.16
+    - 3.0.17
+    - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
+    - 3.0.27
+    - 3.0.28
+    compatible:
+    - 3.0.28
+    recommended: 3.0.28
+    deprecated: []
+  dependencies:
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  resolvedDependencies:
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638447139880000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
+    revision: f4880c72477e9bbd7321c0dbda4428fa10d916df
+    path: 
+  unityLifecycle:
+    version: 3.0.28
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.ide.visualstudio@2.0.22
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.22
+  source: 1
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22"
+  assetPath: Packages/com.unity.ide.visualstudio
+  name: com.unity.ide.visualstudio
+  displayName: Visual Studio Editor
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Code editor integration for supporting Visual Studio as code editor
+    for unity. Adds support for generating csproj files for intellisense purposes,
+    auto discovery of installations, etc.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 1.0.9
+    - 1.0.10
+    - 1.0.11
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.5
+    - 2.0.7
+    - 2.0.8
+    - 2.0.9
+    - 2.0.11
+    - 2.0.12
+    - 2.0.14
+    - 2.0.15
+    - 2.0.16
+    - 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    compatible:
+    - 2.0.22
+    recommended: 2.0.22
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.9
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638326061910000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+    revision: 700b44077345e97d37d464ff25507638983aed64
+    path: 
+  unityLifecycle:
+    version: 2.0.22
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 1
   version: 1.2.5
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.ide.vscode@1.2.5"
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -476,7 +666,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -499,12 +689,149 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.test-framework@1.1.33
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.33
+  source: 1
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.test-framework@1.1.33"
+  assetPath: Packages/com.unity.test-framework
+  name: com.unity.test-framework
+  displayName: Test Framework
+  author:
+    name: 
+    email: 
+    url: 
+  category: Unity Test Framework
+  type: 
+  description: Test framework for running Edit mode and Play mode tests in Unity.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.4-preview
+    - 0.0.29-preview
+    - 1.0.0
+    - 1.0.7
+    - 1.0.9
+    - 1.0.11
+    - 1.0.12
+    - 1.0.13
+    - 1.0.14
+    - 1.0.16
+    - 1.0.17
+    - 1.0.18
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    - 1.1.3
+    - 1.1.5
+    - 1.1.8
+    - 1.1.9
+    - 1.1.11
+    - 1.1.13
+    - 1.1.14
+    - 1.1.16
+    - 1.1.18
+    - 1.1.19
+    - 1.1.20
+    - 1.1.22
+    - 1.1.24
+    - 1.1.26
+    - 1.1.27
+    - 1.1.29
+    - 1.1.30
+    - 1.1.31
+    - 1.1.33
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.3
+    - 1.4.4
+    - 2.0.1-exp.1
+    - 2.0.1-exp.2
+    - 2.0.1-pre.12
+    - 2.0.1-pre.18
+    compatible:
+    - 1.1.33
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.3
+    - 1.4.4
+    - 2.0.1-exp.1
+    - 2.0.1-exp.2
+    - 2.0.1-pre.12
+    - 2.0.1-pre.18
+    recommended: 1.1.33
+    deprecated: []
+  dependencies:
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - Test
+  - TestFramework
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637938212700000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.test-framework.git
+    revision: 34a4d423d64926635eb36d3bb86276179cc186e1
+    path: 
+  unityLifecycle:
+    version: 1.1.33
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.textmeshpro@3.0.6"
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -513,7 +840,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Text Rendering
-  type: asset
+  type: 
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -671,7 +998,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -694,12 +1021,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.timeline@1.6.4
+  fingerprint: 
+- packageId: com.unity.timeline@1.7.6
   testable: 0
   isDirectDependency: 1
-  version: 1.6.4
+  version: 1.7.6
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.timeline@1.6.4
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.timeline@1.7.6"
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -708,7 +1036,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
   status: 0
@@ -840,20 +1168,20 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637789039180000000
-  documentationUrl: 
+  datePublishedTicks: 638326112840000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.7/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: d7e1eb6805737974459309b7d6e7db58635dd167
+    revision: 02f49ada64a9f88044207cf42ba407dc634ef8e6
     path: 
   unityLifecycle:
     version: 1.7.6
@@ -863,12 +1191,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.ugui@1.0.0"
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -912,7 +1241,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -935,12 +1264,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.visualscripting@1.8.0
+  fingerprint: 
+- packageId: com.unity.visualscripting@1.9.4
   testable: 0
   isDirectDependency: 1
-  version: 1.8.0
+  version: 1.9.4
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.visualscripting@1.8.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.visualscripting@1.9.4"
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -988,8 +1318,6 @@ m_ResolvedPackages:
     - 1.9.2
     - 1.9.4
     compatible:
-    - 1.9.1
-    - 1.9.2
     - 1.9.4
     recommended: 1.9.4
     deprecated:
@@ -1012,35 +1340,36 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638060044680000000
+  datePublishedTicks: 638488567680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 0de66378b19e990494d98f39ecc2b6aa5ac65351
+    revision: 41aac2b7038c2b1259c546329890d3736ce2394e
     path: 
   unityLifecycle:
-    version: 1.9.1
+    version: 1.9.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.ai@1.0.0"
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1067,7 +1396,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1090,12 +1419,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.androidjni@1.0.0"
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1121,7 +1451,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1144,12 +1474,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.animation@1.0.0"
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1176,7 +1507,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1199,12 +1530,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.assetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1231,7 +1563,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1254,12 +1586,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.audio@1.0.0"
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1286,7 +1619,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1309,12 +1642,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.cloth@1.0.0"
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1345,7 +1679,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1368,12 +1702,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.director@1.0.0"
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1408,7 +1743,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1431,12 +1766,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.imageconversion@1.0.0"
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1464,7 +1800,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1487,12 +1823,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.imgui@1.0.0"
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1519,7 +1856,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1542,12 +1879,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.jsonserialize@1.0.0"
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1574,7 +1912,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1597,12 +1935,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.particlesystem@1.0.0"
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1629,7 +1968,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1652,12 +1991,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.physics@1.0.0"
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1684,7 +2024,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1707,12 +2047,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.physics2d@1.0.0"
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1739,7 +2080,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1762,12 +2103,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.screencapture@1.0.0"
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1798,7 +2140,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1821,12 +2163,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.terrain@1.0.0"
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1853,7 +2196,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1876,12 +2219,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.terrainphysics@1.0.0"
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1916,7 +2260,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1939,12 +2283,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.tilemap@1.0.0"
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1974,7 +2319,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -1997,12 +2342,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.ui@1.0.0"
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2029,7 +2375,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2052,12 +2398,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.uielements@1.0.0"
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2096,7 +2443,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2119,12 +2466,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.umbra@1.0.0"
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2151,7 +2499,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2174,12 +2522,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.unityanalytics@1.0.0"
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2214,7 +2563,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2237,12 +2586,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.unitywebrequest@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2269,7 +2619,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2292,12 +2642,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2332,7 +2683,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2355,12 +2706,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2395,7 +2747,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2418,12 +2770,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2458,7 +2811,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2481,12 +2834,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2537,7 +2891,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2560,12 +2914,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.vehicles@1.0.0"
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2596,7 +2951,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2619,12 +2974,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.video@1.0.0"
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2663,7 +3019,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2686,12 +3042,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.vr@1.0.0"
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2732,7 +3089,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2755,12 +3112,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.wind@1.0.0"
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2787,7 +3145,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2810,12 +3168,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.xr@1.0.0"
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2854,7 +3213,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2877,12 +3236,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.modules.subsystems@1.0.0"
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2913,7 +3273,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -2936,12 +3296,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6"
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -2950,7 +3311,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: asset
+  type: 
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
   status: 0
@@ -2984,7 +3345,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -3007,340 +3368,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.test-framework@1.1.33
-  testable: 0
-  isDirectDependency: 1
-  version: 1.1.33
-  source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.test-framework@1.1.33
-  assetPath: Packages/com.unity.test-framework
-  name: com.unity.test-framework
-  displayName: Test Framework
-  author:
-    name: 
-    email: 
-    url: 
-  category: Unity Test Framework
-  type: asset
-  description: Test framework for running Edit mode and Play mode tests in Unity.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.0.4-preview
-    - 0.0.29-preview
-    - 1.0.0
-    - 1.0.7
-    - 1.0.9
-    - 1.0.11
-    - 1.0.12
-    - 1.0.13
-    - 1.0.14
-    - 1.0.16
-    - 1.0.17
-    - 1.0.18
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    - 1.1.3
-    - 1.1.5
-    - 1.1.8
-    - 1.1.9
-    - 1.1.11
-    - 1.1.13
-    - 1.1.14
-    - 1.1.16
-    - 1.1.18
-    - 1.1.19
-    - 1.1.20
-    - 1.1.22
-    - 1.1.24
-    - 1.1.26
-    - 1.1.27
-    - 1.1.29
-    - 1.1.30
-    - 1.1.31
-    - 1.1.33
-    - 1.3.0
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.7
-    - 1.3.8
-    - 1.3.9
-    - 1.4.0
-    - 1.4.1
-    - 1.4.2
-    - 1.4.3
-    - 1.4.4
-    - 2.0.1-exp.1
-    - 2.0.1-exp.2
-    - 2.0.1-pre.12
-    - 2.0.1-pre.18
-    compatible:
-    - 1.1.33
-    - 1.3.0
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.7
-    - 1.3.8
-    - 1.3.9
-    - 1.4.0
-    - 1.4.1
-    - 1.4.2
-    - 1.4.3
-    - 1.4.4
-    - 2.0.1-exp.1
-    - 2.0.1-exp.2
-    - 2.0.1-pre.12
-    - 2.0.1-pre.18
-    recommended: 1.1.33
-    deprecated: []
-  dependencies:
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords:
-  - Test
-  - TestFramework
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637938212700000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: 34a4d423d64926635eb36d3bb86276179cc186e1
-    path: 
-  unityLifecycle:
-    version: 1.1.33
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.ide.visualstudio@2.0.22
-  testable: 0
-  isDirectDependency: 1
-  version: 2.0.22
-  source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
-  assetPath: Packages/com.unity.ide.visualstudio
-  name: com.unity.ide.visualstudio
-  displayName: Visual Studio Editor
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: assets
-  description: Code editor integration for supporting Visual Studio as code editor
-    for unity. Adds support for generating csproj files for intellisense purposes,
-    auto discovery of installations, etc.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.2
-    - 1.0.3
-    - 1.0.4
-    - 1.0.9
-    - 1.0.10
-    - 1.0.11
-    - 2.0.0
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.5
-    - 2.0.7
-    - 2.0.8
-    - 2.0.9
-    - 2.0.11
-    - 2.0.12
-    - 2.0.14
-    - 2.0.15
-    - 2.0.16
-    - 2.0.17
-    - 2.0.18
-    - 2.0.20
-    - 2.0.21
-    - 2.0.22
-    compatible:
-    - 2.0.22
-    recommended: 2.0.22
-    deprecated: []
-  dependencies:
-  - name: com.unity.test-framework
-    version: 1.1.9
-  resolvedDependencies:
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638326061910000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 700b44077345e97d37d464ff25507638983aed64
-    path: 
-  unityLifecycle:
-    version: 2.0.22
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.ide.rider@3.0.27
-  testable: 0
-  isDirectDependency: 1
-  version: 3.0.27
-  source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.ide.rider@3.0.27
-  assetPath: Packages/com.unity.ide.rider
-  name: com.unity.ide.rider
-  displayName: JetBrains Rider Editor
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: assets
-  description: The JetBrains Rider Editor package provides an integration for using
-    the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
-    .csproj files for code completion and auto-discovery of installations.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.2
-    - 1.0.6
-    - 1.0.8
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2-preview
-    - 1.1.2-preview.2
-    - 1.1.3-preview.1
-    - 1.1.4-preview
-    - 1.1.4
-    - 1.2.0-preview
-    - 1.2.1
-    - 2.0.0-preview
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.5
-    - 2.0.7
-    - 3.0.1
-    - 3.0.2
-    - 3.0.3
-    - 3.0.4
-    - 3.0.5
-    - 3.0.6
-    - 3.0.7
-    - 3.0.9
-    - 3.0.10
-    - 3.0.12
-    - 3.0.13
-    - 3.0.14
-    - 3.0.15
-    - 3.0.16
-    - 3.0.17
-    - 3.0.18
-    - 3.0.20
-    - 3.0.21
-    - 3.0.22
-    - 3.0.24
-    - 3.0.25
-    - 3.0.26
-    - 3.0.27
-    - 3.0.28
-    compatible:
-    - 3.0.27
-    - 3.0.28
-    recommended: 3.0.28
-    deprecated: []
-  dependencies:
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  resolvedDependencies:
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638373878680000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 1d471c19a7f21834ae5b8d0358fd6f9b242c1ee8
-    path: 
-  unityLifecycle:
-    version: 3.0.27
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.editorcoroutines@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.editorcoroutines@1.0.0"
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3377,7 +3411,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -3400,12 +3434,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.performance.profile-analyzer@1.2.2
   testable: 0
   isDirectDependency: 0
   version: 1.2.2
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.performance.profile-analyzer@1.2.2"
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3414,7 +3449,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: "The Profile Analyzer tool supports the standard Unity Profiler. You
     can use it to analyze multiple frames and multiple data sets of the CPU data
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
@@ -3448,7 +3483,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -3471,12 +3506,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.testtools.codecoverage@1.2.4
+  fingerprint: 
+- packageId: com.unity.testtools.codecoverage@1.2.5
   testable: 0
   isDirectDependency: 0
-  version: 1.2.4
+  version: 1.2.5
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5"
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3485,7 +3521,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: Use this package to export code coverage data and reports from your
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
@@ -3526,7 +3562,6 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     compatible:
-    - 1.2.4
     - 1.2.5
     recommended: 1.2.5
     deprecated: []
@@ -3554,35 +3589,36 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638212235100000000
+  datePublishedTicks: 638386640140000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: a7dd0751db55cd55e3b336723fb51433c1de7244
+    revision: afeb9febf6597fcc31c99ca116d6a82b1e97b9f5
     path: 
   unityLifecycle:
-    version: 1.2.4
+    version: 1.2.5
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.settings-manager@2.0.1
   testable: 0
   isDirectDependency: 0
   version: 2.0.1
   source: 1
-  resolvedPath: E:\Act_Demo\Library\PackageCache\com.unity.settings-manager@2.0.1
+  resolvedPath: "F:\\u3d\u9879\u76EE\\act\\ACT\\Library\\PackageCache\\com.unity.settings-manager@2.0.1"
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -3591,7 +3627,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
   status: 0
@@ -3616,7 +3652,7 @@ m_ResolvedPackages:
   registry:
     id: main
     name: 
-    url: https://packages.unity.com
+    url: https://packages.unity.cn
     scopes: []
     isDefault: 1
     capabilities: 7
@@ -3639,3 +3675,5 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+  fingerprint: 
+m_BuiltInPackagesHash: 4308a4b926505675c965f6ec722e2f0c40de1f0b
