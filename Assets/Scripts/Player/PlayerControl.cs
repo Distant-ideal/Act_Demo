@@ -30,19 +30,28 @@ public class PlayerControl : MonoBehaviour
     // 是否在攻击状态
     private bool IsAttackState = false;
 
+    // 是否在攻击状态
+    private bool CanMove = true;
+
     // 普攻间隔 
     public float AttackDelayTime = 1.0f;
 
     // 普攻连段间隔 
-    public float ClearAttackStateTime = 1.0f;
+    public float ClearAttackStateTime = 3.0f;
 
+    // 是否在地面
+    public bool IsGround = true;
+
+    // 是否在地面
+    public bool IsDodge = false;
+
+    // 武器拖尾
     public GameObject WeaponEffect;
 
     void Awake()
     {
-        
-    }
 
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -56,22 +65,25 @@ public class PlayerControl : MonoBehaviour
         Move();
         MouseControl();
         DoAttack();
-    }   
+        Jump();
+        Dodge();
+    }
 
     // 人物移动
     public void Move()
     {
-        if (IsAttackState == false)
+        // h水平v垂直
+        InputH = Input.GetAxis("Horizontal");
+        InputV = Input.GetAxis("Vertical");
+
+        Direction = new Vector3(InputH, 0, InputV); //normalized
+        // 检测输入
+        if (Direction.magnitude >= 0.1f)
         {
-            // h水平v垂直
-            InputH = Input.GetAxis("Horizontal");
-            InputV = Input.GetAxis("Vertical");
-            
-            Direction = new Vector3(InputH, 0, InputV); //normalized
-            // 检测输入
-            if(Direction.magnitude >= 0.1f)
+            if (!IsAttackState && CanMove)
             {
-                Animator1.SetBool("Run", true);
+                //Animator1.SetBool("Run", true);
+                Animator1.SetFloat("Speed", Direction.magnitude);
                 // 计算目标角度
                 float TargetAngle = Mathf.Atan2(Direction.x, Direction.z) * Mathf.Rad2Deg + Camera1.transform.eulerAngles.y;
                 // 平滑角度过渡
@@ -83,10 +95,11 @@ public class PlayerControl : MonoBehaviour
                 // 移动
                 Controller1.Move(MoveDirection * MoveSpeed * Time.deltaTime);
             }
-            else
-            {
-                Animator1.SetBool("Run", false);
-            }
+            
+        }
+        else
+        {
+            Animator1.SetFloat("Speed", 0f);
         }
     }
 
@@ -107,25 +120,28 @@ public class PlayerControl : MonoBehaviour
     // 鼠标控制器
     public void MouseControl()
     {
-        if(Input.GetKey(KeyCode.LeftAlt))
+        if (Input.GetKey(KeyCode.LeftAlt))
         {
             UnLockMouse();
         }
 
-        if(Input.GetKeyUp(KeyCode.LeftAlt))
+        if (Input.GetKeyUp(KeyCode.LeftAlt))
         {
             LockMouse();
         }
     }
 
-    public void DoAttack()  
+    public void DoAttack()
     {
         // 是否处于攻击状态
-        if(IsAttackState == false)
+
+        if (!IsAttackState && IsGround)//判断是否处于攻击状态
         {
-            if(Input.GetKeyDown(KeyCode.Mouse0))
-            {   
+            if (Input.GetKeyDown(KeyCode.Mouse0) && !IsDodge)//判断是否按下按键
+            {
                 WeaponEffect.SetActive(true);
+
+                //普通攻击播放动画
                 if (NormalAttackNum == 0)
                 {
                     Animator1.CrossFade("combo1", 0.1f);
@@ -143,29 +159,31 @@ public class PlayerControl : MonoBehaviour
                     Animator1.CrossFade("combo4", 0.1f);
                 }
 
-                if (NormalAttackNum >= 3)
+                //普通攻击连段
+                if (NormalAttackNum < 3)
                 {
-                    NormalAttackNum = 0;
+                    NormalAttackNum = NormalAttackNum + 1;
                 }
                 else
                 {
-                    NormalAttackNum += 1;
+                    NormalAttackNum = 0;
                 }
 
+                //处理攻击状态
                 IsAttackState = true;
-                // 延迟恢复攻击状态
-                Invoke("AttakEnd", AttackDelayTime);
-
-                // 延迟清空连段
+                CanMove = false;
+                Animator1.SetBool("CanMove", false);
+                //延迟回复攻击状态
+                Invoke("AttackEnd", AttackDelayTime);
+                //延迟清空攻击连段
                 CancelInvoke("ClearAttackState");
                 Invoke("ClearAttackState", ClearAttackStateTime);
             }
         }
-        
     }
 
     // 攻击结束
-    public void AttakEnd() 
+    public void AttackEnd()
     {
         WeaponEffect.SetActive(false);
         IsAttackState = false;
@@ -175,5 +193,61 @@ public class PlayerControl : MonoBehaviour
     public void ClearAttackState()
     {
         NormalAttackNum = 0;
+    }
+
+    // 回复移动状态
+    public void RestoreMoveState(AnimationEvent AnimationEvent1)
+    {
+        if (NormalAttackNum == AnimationEvent1.intParameter || AnimationEvent1.stringParameter == "dodge_end")
+        {
+            CanMove = true;
+            Animator1.SetBool("CanMove", true);
+        }
+    }
+
+    // 跳跃
+    public void Jump()
+    {
+        if (CanMove && !IsDodge)
+        {
+            if (IsGround && Input.GetKeyDown(KeyCode.Space))
+            {
+                Animator1.SetBool("IsGround", false);
+                Animator1.CrossFade("Jump", 0.1f);
+                IsGround = false;
+                Invoke("JumpEnd", 1.0f);
+            }
+        }
+    }
+        
+    // 跳跃结束
+    public void JumpEnd()
+    {
+        IsGround = true;
+        Animator1.SetBool("IsGround", true);
+    }
+
+    // 闪避事件
+    public void Dodge()
+    {
+        if (IsGround)
+        {
+            if(Input.GetKeyDown(KeyCode.LeftShift) && !IsDodge)
+            {
+                IsDodge = true;
+                Animator1.CrossFade("dodge_back", 0f);
+                Invoke("DodgeEnd", 0.5f);
+                AttackEnd();
+            }
+        }
+    }
+
+    // 闪避事件
+    public void DodgeEnd()
+    {
+        IsDodge = false;
+        //延迟清空攻击连段
+        CancelInvoke("ClearAttackState");
+        Invoke("ClearAttackState", ClearAttackStateTime);
     }
 }
