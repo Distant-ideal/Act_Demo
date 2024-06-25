@@ -48,6 +48,22 @@ public class PlayerControl : MonoBehaviour
     // 武器拖尾
     public GameObject WeaponEffect;
 
+    // 伤害触发器位置
+    public Transform AttackLocation;
+
+    // 伤害触发器
+    public GameObject AttackObject;
+
+    // 伤害触发器位置
+    public Transform HitLocation;
+
+    // 伤害触发器
+    public GameObject HitObject;
+
+    private GameObject[] Enemys;
+
+    private bool IsBeAttack = false;
+
     void Awake()
     {
 
@@ -62,11 +78,24 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
-        MouseControl();
-        DoAttack();
-        Jump();
+        if (!IsBeAttack)
+        {
+            Move();
+            DoAttack();
+            Jump();
+        }
+
         Dodge();
+        MouseControl();
+    }
+
+    // 触发事件
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "EnemyAttackBox")
+        {
+            GetHit();
+        }
     }
 
     // 人物移动
@@ -95,7 +124,7 @@ public class PlayerControl : MonoBehaviour
                 // 移动
                 Controller1.Move(MoveDirection * MoveSpeed * Time.deltaTime);
             }
-            
+
         }
         else
         {
@@ -140,6 +169,8 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) && !IsDodge)//判断是否按下按键
             {
                 WeaponEffect.SetActive(true);
+
+                SetActorAttackRotation();
 
                 //普通攻击播放动画
                 if (NormalAttackNum == 0)
@@ -219,7 +250,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
     }
-        
+
     // 跳跃结束
     public void JumpEnd()
     {
@@ -232,7 +263,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (IsGround)
         {
-            if(Input.GetKeyDown(KeyCode.LeftShift) && !IsDodge)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !IsDodge)
             {
                 IsDodge = true;
                 Animator1.CrossFade("dodge_back", 0f);
@@ -249,5 +280,58 @@ public class PlayerControl : MonoBehaviour
         //延迟清空攻击连段
         CancelInvoke("ClearAttackState");
         Invoke("ClearAttackState", ClearAttackStateTime);
+    }
+
+    // 生成伤害触发器
+    public void CreateDamage(AnimationEvent AnimationEvent1)
+    {
+        Instantiate(AttackObject, AttackLocation.position, AttackLocation.rotation);
+    }
+
+    public void SetActorAttackRotation()
+    {
+        Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+
+        GameObject NearestEnemy = null;
+
+        float MinDistance = 10000;
+        Vector3 CurrentPos = transform.position;
+
+        foreach (GameObject enemy in Enemys)
+        {
+            float distance = Vector3.Distance(enemy.transform.position, CurrentPos);
+            if (distance < MinDistance)
+            {
+                NearestEnemy = enemy;
+                MinDistance = distance;
+            }
+        }
+
+        Vector3 EnemyPos = NearestEnemy.transform.position;
+        EnemyPos.y = transform.position.y;
+        transform.LookAt(EnemyPos);
+    }
+
+    public void GetHit()
+    {
+        if (!ISDodge)
+        {
+            IsBeAttack = true;
+
+            // 生成特效
+            Instantiate(HitObject, HitLocation.position, HitLocation.rotation);
+
+            // 播放动画
+            Animator1.CrossFade("GetHit", 0.1f);
+
+            Invoke("GetHitEnd", 1.0f);
+
+            Animator1.SetFloat("Speed", 0);
+        }  
+    }
+
+    public void GetHitEnd()
+    {
+        IsBeAttack = false;
     }
 }

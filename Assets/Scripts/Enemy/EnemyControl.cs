@@ -1,0 +1,160 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public enum BossState
+{
+    idle,
+    attack,
+    run,
+}
+
+public class EnemyControl : MonoBehaviour
+{
+    private BossState CurrentState = BossState.idle;
+    private bool IsDead = false;
+    private Animator Anim;
+    // µ¼º½Íø¸ñ
+    private NavMeshAgent Agent;
+    private float HpNow = 100.0f;
+    // Íæ¼ÒÎ»ÖÃ
+    public Transform player;
+    public float IdleDis = 100.0f;
+    public float AttackDis = 3.0f;
+    public float HpMax = 100.0f;
+
+    // ÉËº¦´¥·¢Æ÷Î»ÖÃ
+    public Transform HitLocation;
+
+    // ÉËº¦´¥·¢Æ÷
+    public GameObject HitObject;
+
+    // ÉËº¦´¥·¢Æ÷Î»ÖÃ
+    public Transform AttackLocation;
+
+    // ÉËº¦´¥·¢Æ÷
+    public GameObject AttackObject;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        HpNow = HpMax;
+        Anim = GetComponent<Animator>();
+        Agent = GetComponent<NavMeshAgent>();
+        player = GameObject.FindWithTag("Player").transform;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        LookAtPlayer();
+        EnemyState();
+    }
+       
+    // ³¯ÏòÍç¼²
+    public void LookAtPlayer()
+    {
+        if(!IsDead)
+        {
+            Vector3 PlayerPos = player.position;
+            PlayerPos.y = transform.position.y;
+            transform.LookAt(PlayerPos);
+        }
+    }
+
+    // ´¥·¢ÊÂ¼þ
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!IsDead)
+        {
+            if(other.gameObject.tag == "AttackBox")
+            {
+                GetHit();
+            }
+        }
+    }
+       
+    //ÇÐ»»×´Ì¬
+    public void EnemyState()
+    {
+        if (!IsDead)
+        {
+            float distance1 = Vector3.Distance(transform.position, player.position);
+            switch (CurrentState)
+            {
+                // µÈ´ý
+                case BossState.idle:
+                    Anim.Play("RunTree");
+                    Anim.SetFloat("MoveSpeed", 0f);
+                    Anim.SetBool("Attack", false);
+                    Agent.isStopped = true;
+
+                    if(distance1 > AttackDis && distance1 <= IdleDis)
+                    {
+                        CurrentState = BossState.run;
+                    }
+                    break;
+                // ×·×Ù
+                case BossState.run:
+                    Agent.isStopped = false;
+                    Agent.SetDestination(player.position);
+                    Anim.SetFloat("MoveSpeed", 1f);
+                    Anim.SetBool("Attack", false);
+                    if(distance1 > IdleDis)
+                    {
+                        CurrentState = BossState.idle;
+                    }
+                    else if (distance1 <= AttackDis)
+                    {
+                        CurrentState = BossState.attack;
+                    }
+                    break;
+                //¹¥»÷×´Ì¬
+                case BossState.attack:
+                    Agent.isStopped = false;
+                    EnemyAttack();
+                    if (distance1 > AttackDis)
+                    {
+                        CurrentState = BossState.run;
+                    }
+                    else
+                    {
+                        Anim.SetFloat("MoveSpeed", 0f);
+                    }
+                    break; 
+            }
+        }
+        else
+        {
+            Agent.isStopped = true;
+        }
+    }
+
+    public void EnemyAttack()
+    {
+        if (Anim.GetBool("Attack"))
+        {
+            return;
+        }
+
+        Anim.SetBool("Attack", true);
+    }
+
+    public void GetHit()
+    {
+        HpNow = HpNow - Random.Range(8, 12);
+        // Éú³ÉÌØÐ§
+        Instantiate(HitObject, HitLocation.position, HitLocation.rotation);
+
+        // ²¥·Å¶¯»­
+        Anim.CrossFade("GetHit", 0.1f);
+    }
+
+    // Éú³ÉÉËº¦´¥·¢Æ÷
+    public void CreateDamage(AnimationEvent AnimationEvent1)
+    {
+        Instantiate(AttackObject, AttackLocation.position, AttackLocation.rotation);
+    }
+}
