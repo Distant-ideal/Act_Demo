@@ -144,6 +144,7 @@ public class EnemyControl : MonoBehaviour
 
     public void GetHit()
     {
+        Debug.Log("1111111111111111111");
         HpNow = HpNow - Random.Range(8, 12);
         // 生成特效
         Instantiate(HitObject, HitLocation.position, HitLocation.rotation);

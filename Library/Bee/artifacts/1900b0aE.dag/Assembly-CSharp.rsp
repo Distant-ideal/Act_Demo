@@ -413,7 +413,6 @@
 "Assets/KY_effects/Script/Lighting.cs"
 "Assets/KY_effects/Script/ThisDestroy.cs"
 "Assets/MiniGames/Trail/Trail.cs"
-"Assets/Scenes/NewBehaviourScript.cs"
 "Assets/Scripts/Combat_Manage/AttackBox.cs"
 "Assets/Scripts/Combat_Manage/GetHitShow.cs"
 "Assets/Scripts/Enemy/EnemyControl.cs"

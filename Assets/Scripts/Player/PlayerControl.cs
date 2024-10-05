@@ -314,7 +314,8 @@ public class PlayerControl : MonoBehaviour
 
     public void GetHit()
     {
-        if (!ISDodge)
+        Debug.Log("222222222222222222");
+        if (!IsDodge)
         {
             IsBeAttack = true;
 

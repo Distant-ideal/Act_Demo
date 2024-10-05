@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GetHitShow : MonoBehaviour
 {
-    public float DesTime = 0.1f;
+    public float DesTime = 0.15f;
     // Start is called before the first frame update
     void Start()
     {
