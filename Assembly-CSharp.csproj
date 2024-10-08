@@ -59,15 +59,21 @@
     <UnityVersion>2022.3.33f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\gongpx\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\gongpx\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity 2022.3.33f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity 2022.3.33f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Skill\manage\Transforms\VisibleToClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Events\TriggerLogClipTask.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_AudioManager.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\AnimationTrack.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\SkillAsset.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\SkillClipBase.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
-    <Compile Include="Assets\Suriyun\Scripts\Swapper.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Transforms\ScaleToClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Particles\PlayParticleClipTask.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\GrayscaleEffect.cs" />
     <Compile Include="Assets\KY_effects\Script\C_ky_matControl.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_BlendShapesManager.cs" />
@@ -75,30 +81,56 @@
     <Compile Include="Assets\InfinityPBR\Demo Scripts\IPBR_EnvironmentWarning.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_DemoControl_v2.cs" />
     <Compile Include="Assets\InfinityPBR\_InfinityPBR - Giant Worm\Scripts\SFB_DemoGiantWorm.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\EffectTrack.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Event\TriggerShake.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\GlowEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_CameraRotate_v2.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\MoveTo.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Transforms\RotateToClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_StayWithTarget.cs" />
+    <Compile Include="Assets\Scripts\Combat_Manage\GetHitShow.cs" />
+    <Compile Include="Assets\Scripts\Tasks\TimeStopTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightFlicker.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\NoiseEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_AnubisDemo.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\SSAOEffect.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\RotateTo.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_ParticleGrowOverTime.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\OptionParams.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_ParticleTrailRotation.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Config\SkillConfig.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Events\TriggerEventClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Transforms\MoveByClipTask.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Animation\PlayAnimation.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\ImageEffectBase.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\BlendShapesManager.cs" />
-    <Compile Include="Assets\Suriyun\Scripts\AnimatorController.cs" />
     <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightAutoOn.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Event\TriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\Player\HeroPlayer.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillPlayAttack.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Effect\PlayParticle.cs" />
     <Compile Include="Assets\KY_effects\Script\C_ky_simpleDynMat.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Events\TriggerShakeClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightColorChange.cs" />
+    <Compile Include="Assets\Scripts\BattleRunner.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyControl.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\GameObject\VisibleTo.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Animations\PlayAnimationClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\BlendShapesPresetManager.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_HumanDemoControl.cs" />
+    <Compile Include="Assets\Scripts\Tasks\LogTask.cs" />
     <Compile Include="Assets\MiniGames\Trail\Trail.cs" />
+    <Compile Include="Assets\Scripts\Skill\ISkillPlay.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\EdgeDetectEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\IPBR_SupportAndReview.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\ActionTrack.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\EquipmentGroup.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Event\TriggerLog.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightAutoOff.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\SkillDirector.cs" />
+    <Compile Include="Assets\Scripts\Skill\manage\Transforms\MoveToClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_MoveOverTime.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\photoController.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\DemoKeyCommands.cs" />
@@ -110,6 +142,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_HumanDemoModel.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_ShotFollowTarget.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\ScaleTo.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_ToggleOpposite.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\MotionBlur.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
@@ -117,11 +150,16 @@
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\EquipObject.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\WardrobePrefabManager.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\SignalTrack.cs" />
     <Compile Include="Assets\InfinityPBR\Audio Snapshot Exporter\SFB_AudioSnapshotExporter.cs" />
     <Compile Include="Assets\KY_effects\Script\ThisDestroy.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\DemoWardrobe.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\PrefabAndObjectManager.cs" />
-    <Compile Include="Assets\Scenes\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\Player\RoleBase.cs" />
+    <Compile Include="Assets\Scripts\Tasks\RunFunTask.cs" />
+    <Compile Include="Assets\Scripts\Combat_Manage\AttackBox.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\MoveBy.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\BuffAsset.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
@@ -1081,48 +1119,20 @@
       <HintPath>C:\Program Files\Unity 2022.3.33f1c1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
@@ -1137,20 +1147,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
@@ -1161,18 +1167,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
       <Private>False</Private>
@@ -1181,8 +1175,71 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NBC.ActionEditor.Editor.csproj" />
+    <ProjectReference Include="NBC.csproj" />
+    <ProjectReference Include="NBC.ActionEditor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

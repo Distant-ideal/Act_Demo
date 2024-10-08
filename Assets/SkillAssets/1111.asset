@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7557493723317229036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 659090e873e746ca9f1c6cb94357fd58, type: 3}
+  m_Name: EffectTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: -15698802965993147}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  Layer: 0
+--- !u!114 &-6316500417821866595
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a9db414099843999551c8e3036e3029, type: 3}
+  m_Name: AnimationTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: -5672983546646394594}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &-5987002376436826915
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2749d90b133472da797f5201e53720, type: 3}
+  m_Name: New Group
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 11400000}
+  tracks: []
+  isCollapsed: 0
+  active: 1
+  isLocked: 0
+--- !u!114 &-5672983546646394594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f287254a274055ab76bb9e49c2930d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: -6316500417821866595}
+  startTime: 0.3
+  length: 1
+  blendIn: 0.25
+  blendOut: 0.25
+  resPath: Assets/Animation/Player/Run.anim
+  playbackSpeed: 3.48
+  clipOffset: 0
+--- !u!114 &-4729551767108731786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154d3633e4d442e59b4cc7751d8f6c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 403168936879190285}
+  startTime: 1.4
+  eventName: 2
+  calculateType: 0
+  calculateArgs: 0
+  kill: 0
+--- !u!114 &-202270216992808698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64349cad6264d0b9c283e9780792fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 403168936879190285}
+  startTime: 0.3
+  log: 11111111
+--- !u!114 &-15698802965993147
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bf4d6ab9cd406894fd8930012dadc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: -7557493723317229036}
+  startTime: 0.3
+  length: 1
+  resPath: Assets/Arab City/Destroyed City/Model/Add on/ac.fbx
+  scale: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40827cb21221493448cc239bd8b5864d, type: 3}
+  m_Name: 1111
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 0}
+  groups:
+  - {fileID: 7193246385372206122}
+  length: 3.8
+  viewTimeMin: -1.0556246
+  viewTimeMax: 4.6083064
+--- !u!114 &403168936879190285
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fecc192183f461ca51109a8fd37fe76, type: 3}
+  m_Name: SignalTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: -202270216992808698}
+  - {fileID: -4729551767108731786}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &5693545630792226943
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae04abf770f449088c52fb314b5db844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7474446336851467446}
+  startTime: 0.3
+  length: 2.5
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  interpolation: 6
+  move: {x: 10, y: 0, z: 0}
+--- !u!114 &7106877361101290559
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2749d90b133472da797f5201e53720, type: 3}
+  m_Name: New Group
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 11400000}
+  tracks: []
+  isCollapsed: 1
+  active: 1
+  isLocked: 0
+--- !u!114 &7193246385372206122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2749d90b133472da797f5201e53720, type: 3}
+  m_Name: New Group
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 11400000}
+  tracks:
+  - {fileID: -6316500417821866595}
+  - {fileID: 7474446336851467446}
+  - {fileID: 403168936879190285}
+  isCollapsed: 0
+  active: 1
+  isLocked: 0
+--- !u!114 &7474446336851467446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7ca5c0434e14e47835f32b395233b5, type: 3}
+  m_Name: ActionTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: 5693545630792226943}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  Test1: 0
+  Test2: 0
+  Test3: 
+--- !u!114 &8781944223014173283
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e492df250d44fa823e969d5bb3ba4b, type: 3}
+  m_Name: AudioTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips: []
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
