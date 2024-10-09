@@ -33,7 +33,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parent: {fileID: 7193246385372206122}
   actionClips:
-  - {fileID: -5672983546646394594}
+  - {fileID: 4182474764694868856}
   active: 1
   isLocked: 0
   color: {r: 1, g: 1, b: 1, a: 1}
@@ -74,6 +74,26 @@ MonoBehaviour:
   resPath: Assets/Animation/Player/Run.anim
   playbackSpeed: 3.48
   clipOffset: 0
+--- !u!114 &-5232063271293772240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f287254a274055ab76bb9e49c2930d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: -6316500417821866595}
+  startTime: 0.5
+  length: 1
+  blendIn: 0.25
+  blendOut: 0.25
+  resPath: Assets/Animation/Player/Jump.anim
+  playbackSpeed: 1
+  clipOffset: 0
 --- !u!114 &-4729551767108731786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 403168936879190285}
-  startTime: 0.3
+  startTime: 0.5
   log: 11111111
 --- !u!114 &-15698802965993147
 MonoBehaviour:
@@ -161,6 +181,26 @@ MonoBehaviour:
   active: 1
   isLocked: 0
   color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &4182474764694868856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f287254a274055ab76bb9e49c2930d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: -6316500417821866595}
+  startTime: 0
+  length: 1
+  blendIn: 0.25
+  blendOut: 0.25
+  resPath: Assets/Animation/Player/Jump.anim
+  playbackSpeed: 1
+  clipOffset: 0
 --- !u!114 &5693545630792226943
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -174,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 7474446336851467446}
-  startTime: 0.3
+  startTime: 1
   length: 2.5
   curve:
     serializedVersion: 2
