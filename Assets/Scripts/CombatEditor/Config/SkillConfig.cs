@@ -27,7 +27,7 @@
 #if UNITY_EDITOR
                     //演示直接使用editor的资源方法
                     _skillAsset =
-                        UnityEditor.AssetDatabase.LoadAssetAtPath<SkillAsset>($"Assets/ResRaw/Skill/{EventName}.asset");
+                        UnityEditor.AssetDatabase.LoadAssetAtPath<SkillAsset>($"Assets/SkillAssets/{EventName}.asset");
 #endif
                 }
 

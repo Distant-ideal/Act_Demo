@@ -59,21 +59,18 @@
     <UnityVersion>2022.3.33f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\gongpx\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\gongpx\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity 2022.3.33f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity 2022.3.33f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Skill\manage\Transforms\VisibleToClipTask.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Events\TriggerLogClipTask.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_AudioManager.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\AnimationTrack.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\SkillAsset.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\SkillClipBase.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\SkillDirector.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Transforms\ScaleToClipTask.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Particles\PlayParticleClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Events\TriggerShakeClipTask.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\GrayscaleEffect.cs" />
     <Compile Include="Assets\KY_effects\Script\C_ky_matControl.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_BlendShapesManager.cs" />
@@ -86,25 +83,30 @@
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\GlowEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_CameraRotate_v2.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\MoveTo.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Transforms\RotateToClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_StayWithTarget.cs" />
     <Compile Include="Assets\Scripts\Combat_Manage\GetHitShow.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\BoxCollision\BoxCollisionClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Transforms\VisibleToClipTask.cs" />
     <Compile Include="Assets\Scripts\Tasks\TimeStopTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightFlicker.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\NoiseEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_AnubisDemo.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\SSAOEffect.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\CollisionTrack.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\RotateTo.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_ParticleGrowOverTime.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\OptionParams.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Events\TriggerEventClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Transforms\MoveToClipTask.cs" />
+    <Compile Include="Assets\Scripts\Init.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_ParticleTrailRotation.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Config\SkillConfig.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Events\TriggerEventClipTask.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Transforms\MoveByClipTask.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Animation\PlayAnimation.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\ImageEffectBase.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\BlendShapesManager.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Transforms\MoveByClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Transforms\ScaleToClipTask.cs" />
     <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightAutoOn.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Event\TriggerEvent.cs" />
@@ -112,26 +114,28 @@
     <Compile Include="Assets\Scripts\Skill\SkillPlayAttack.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Effect\PlayParticle.cs" />
     <Compile Include="Assets\KY_effects\Script\C_ky_simpleDynMat.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Events\TriggerShakeClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightColorChange.cs" />
     <Compile Include="Assets\Scripts\BattleRunner.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Transforms\RotateToClipTask.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\GameObject\VisibleTo.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Animations\PlayAnimationClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\BlendShapesPresetManager.cs" />
+    <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Collisions\BoxCollision.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_HumanDemoControl.cs" />
     <Compile Include="Assets\Scripts\Tasks\LogTask.cs" />
     <Compile Include="Assets\MiniGames\Trail\Trail.cs" />
     <Compile Include="Assets\Scripts\Skill\ISkillPlay.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\SkillClipBase.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\EdgeDetectEffect.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\IPBR_SupportAndReview.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\ActionTrack.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Events\TriggerLogClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\EquipmentGroup.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Event\TriggerLog.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightAutoOff.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\SkillDirector.cs" />
-    <Compile Include="Assets\Scripts\Skill\manage\Transforms\MoveToClipTask.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Particles\PlayParticleClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_MoveOverTime.cs" />
+    <Compile Include="Assets\Scripts\Skill\Manage\Animations\PlayAnimationClipTask.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\photoController.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\DemoKeyCommands.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_TurnOffIfOn.cs" />
@@ -1237,8 +1241,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NBC.ActionEditor.Editor.csproj" />
     <ProjectReference Include="NBC.csproj" />
+    <ProjectReference Include="NBC.ActionEditor.Editor.csproj" />
     <ProjectReference Include="NBC.ActionEditor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

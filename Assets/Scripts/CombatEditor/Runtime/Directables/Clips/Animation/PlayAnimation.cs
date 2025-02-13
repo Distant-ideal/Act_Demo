@@ -8,13 +8,13 @@ namespace NBC.ActionEditorExample
     [Description("播放一个动画剪辑的行为")]
     [Color(0.48f, 0.71f, 0.84f)]
     [Attachable(typeof(AnimationTrack))]
-    public class PlayAnimation : ActionClip, ISubClipContainable
+    public class PlayAnimation : ActionClip
     {
         [SerializeField] [HideInInspector] private float length = 1f;
         [SerializeField] [HideInInspector] private float blendIn = 0.25f;
         [SerializeField] [HideInInspector] private float blendOut = 0.25f;
 
-        [MenuName("播放音频")] [SelectObjectPath(typeof(AnimationClip))]
+        [MenuName("播放动画")] [SelectObjectPath(typeof(AnimationClip))]
         public string resPath = "";
 
         private AnimationClip _animationClip;
@@ -41,7 +41,6 @@ namespace NBC.ActionEditorExample
         }
 
         [Range(0.1f, 10f)] [MenuName("播放速度")] public float playbackSpeed = 1;
-        [MenuName("偏移量")] public float clipOffset;
 
 
         public override float Length
@@ -62,19 +61,9 @@ namespace NBC.ActionEditorExample
             set => blendOut = value;
         }
 
-
-        float ISubClipContainable.SubClipOffset
-        {
-            get => clipOffset;
-            set => clipOffset = value;
-        }
-
-        float ISubClipContainable.SubClipLength => animationClip != null ? animationClip.length : 0;
-
-        float ISubClipContainable.SubClipSpeed => 1;
-
         public override bool isValid => animationClip != null;
 
         public override string info => isValid ? animationClip.name : base.info;
+
     }
 }

@@ -82,7 +82,7 @@ public class PlayerControl : MonoBehaviour
         {
             Move();
             DoAttack();
-            Jump();
+            // Jump();
         }
 
         Dodge();
@@ -336,3 +336,4 @@ public class PlayerControl : MonoBehaviour
         IsBeAttack = false;
     }
 }
+

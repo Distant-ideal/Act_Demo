@@ -59,7 +59,6 @@ namespace ActionEditorExample
             if (_effectObj != null)
             {
                 _effectObj.gameObject.SetActive(false);
-                Object.DestroyImmediate(_effectObj.gameObject);
             }
         }
 

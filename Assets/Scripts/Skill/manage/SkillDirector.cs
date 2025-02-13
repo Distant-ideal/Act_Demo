@@ -48,6 +48,10 @@ namespace NBC.ActionEditorExample
             {
                 classInst = new TriggerShakeClipTask();
             }
+            else if (clip is TriggerShake)
+            {
+                classInst = new TriggerShakeClipTask();
+            }
 
             if (classInst != null)
             {

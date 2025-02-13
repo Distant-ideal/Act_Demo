@@ -15,45 +15,45 @@ public class EnemyControl : MonoBehaviour
     private BossState CurrentState = BossState.idle;
     private bool IsDead = false;
     private Animator Anim;
-    // µ¼º½Íø¸ñ
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private NavMeshAgent Agent;
     private float HpNow = 100.0f;
-    // Íæ¼ÒÎ»ÖÃ
+    // ï¿½ï¿½ï¿½Î»ï¿½ï¿½
     public Transform player;
     public float IdleDis = 100.0f;
     public float AttackDis = 3.0f;
     public float HpMax = 100.0f;
 
-    // ÉËº¦´¥·¢Æ÷Î»ÖÃ
+    // ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
     public Transform HitLocation;
 
-    // ÉËº¦´¥·¢Æ÷
+    // ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public GameObject HitObject;
 
-    // ÉËº¦´¥·¢Æ÷Î»ÖÃ
+    // ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
     public Transform AttackLocation;
 
-    // ÉËº¦´¥·¢Æ÷
+    // ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public GameObject AttackObject;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        HpNow = HpMax;
-        Anim = GetComponent<Animator>();
-        Agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindWithTag("Player").transform;
+        // HpNow = HpMax;
+        // Anim = GetComponent<Animator>();
+        // Agent = GetComponent<NavMeshAgent>();
+        // player = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        LookAtPlayer();
-        EnemyState();
+        // LookAtPlayer();
+        // EnemyState();
     }
        
-    // ³¯ÏòÍç¼²
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ç¼²
     public void LookAtPlayer()
     {
         if(!IsDead)
@@ -64,7 +64,7 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
-    // ´¥·¢ÊÂ¼þ
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
     private void OnTriggerEnter(Collider other)
     {
         if (!IsDead)
@@ -76,7 +76,7 @@ public class EnemyControl : MonoBehaviour
         }
     }
        
-    //ÇÐ»»×´Ì¬
+    //ï¿½Ð»ï¿½×´Ì¬
     public void EnemyState()
     {
         if (!IsDead)
@@ -84,7 +84,7 @@ public class EnemyControl : MonoBehaviour
             float distance1 = Vector3.Distance(transform.position, player.position);
             switch (CurrentState)
             {
-                // µÈ´ý
+                // ï¿½È´ï¿½
                 case BossState.idle:
                     Anim.Play("RunTree");
                     Anim.SetFloat("MoveSpeed", 0f);
@@ -96,7 +96,7 @@ public class EnemyControl : MonoBehaviour
                         CurrentState = BossState.run;
                     }
                     break;
-                // ×·×Ù
+                // ×·ï¿½ï¿½
                 case BossState.run:
                     Agent.isStopped = false;
                     Agent.SetDestination(player.position);
@@ -111,7 +111,7 @@ public class EnemyControl : MonoBehaviour
                         CurrentState = BossState.attack;
                     }
                     break;
-                //¹¥»÷×´Ì¬
+                //ï¿½ï¿½ï¿½ï¿½×´Ì¬
                 case BossState.attack:
                     Agent.isStopped = false;
                     EnemyAttack();
@@ -146,14 +146,14 @@ public class EnemyControl : MonoBehaviour
     {
         Debug.Log("1111111111111111111");
         HpNow = HpNow - Random.Range(8, 12);
-        // Éú³ÉÌØÐ§
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
         Instantiate(HitObject, HitLocation.position, HitLocation.rotation);
 
-        // ²¥·Å¶¯»­
+        // ï¿½ï¿½ï¿½Å¶ï¿½ï¿½ï¿½
         Anim.CrossFade("GetHit", 0.1f);
     }
 
-    // Éú³ÉÉËº¦´¥·¢Æ÷
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public void CreateDamage(AnimationEvent AnimationEvent1)
     {
         Instantiate(AttackObject, AttackLocation.position, AttackLocation.rotation);

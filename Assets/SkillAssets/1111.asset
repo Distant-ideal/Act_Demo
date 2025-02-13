@@ -37,6 +37,23 @@ MonoBehaviour:
   active: 1
   isLocked: 0
   color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &-6087333714365026696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6027f6fd448cc5e459e1fcc45bdae376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7463114373690022362}
+  startTime: 0
+  length: 1
+  resPath: Assets/Character/BoxCollider.prefab
+  collisionsize: {x: 2, y: 2, z: 2}
 --- !u!114 &-5987002376436826915
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,7 +90,23 @@ MonoBehaviour:
   blendOut: 0.25
   resPath: Assets/Animation/Player/Run.anim
   playbackSpeed: 3.48
-  clipOffset: 0
+--- !u!114 &-5492265459295539579
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bf4d6ab9cd406894fd8930012dadc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: -3589767398891925088}
+  startTime: 0
+  length: 1.2
+  resPath: Assets/KY_effects/AMFX01/P_AMFX01_goldExp.prefab
+  scale: 0
 --- !u!114 &-5232063271293772240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,7 +126,6 @@ MonoBehaviour:
   blendOut: 0.25
   resPath: Assets/Animation/Player/Jump.anim
   playbackSpeed: 1
-  clipOffset: 0
 --- !u!114 &-4729551767108731786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +144,25 @@ MonoBehaviour:
   calculateType: 0
   calculateArgs: 0
   kill: 0
+--- !u!114 &-3589767398891925088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 659090e873e746ca9f1c6cb94357fd58, type: 3}
+  m_Name: EffectTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: -5492265459295539579}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  Layer: 0
 --- !u!114 &-202270216992808698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 403168936879190285}
-  startTime: 0.5
+  startTime: 0
   log: 11111111
 --- !u!114 &-15698802965993147
 MonoBehaviour:
@@ -159,9 +210,9 @@ MonoBehaviour:
   _parent: {fileID: 0}
   groups:
   - {fileID: 7193246385372206122}
-  length: 3.8
-  viewTimeMin: -1.0556246
-  viewTimeMax: 4.6083064
+  length: 3.5
+  viewTimeMin: 0
+  viewTimeMax: 3.5
 --- !u!114 &403168936879190285
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,13 +245,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: -6316500417821866595}
-  startTime: 0
+  startTime: 0.8
   length: 1
-  blendIn: 0.25
+  blendIn: 0.492
   blendOut: 0.25
   resPath: Assets/Animation/Player/Jump.anim
   playbackSpeed: 1
-  clipOffset: 0
 --- !u!114 &5693545630792226943
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,8 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 7474446336851467446}
-  startTime: 1
-  length: 2.5
+  startTime: 0.3
+  length: 2.2
   curve:
     serializedVersion: 2
     m_Curve: []
@@ -257,10 +307,30 @@ MonoBehaviour:
   tracks:
   - {fileID: -6316500417821866595}
   - {fileID: 7474446336851467446}
-  - {fileID: 403168936879190285}
+  - {fileID: -3589767398891925088}
+  - {fileID: 7463114373690022362}
   isCollapsed: 0
   active: 1
   isLocked: 0
+--- !u!114 &7463114373690022362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6d1877fa328f54a97a936aaf61254c, type: 3}
+  m_Name: CollisionTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: -6087333714365026696}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  Layer: 0
 --- !u!114 &7474446336851467446
 MonoBehaviour:
   m_ObjectHideFlags: 1

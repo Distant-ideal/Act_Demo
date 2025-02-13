@@ -38,7 +38,8 @@ namespace ActionEditorExample
                     audioClipName = clip.animationClip.name;
                 }
 
-                if (_animator.runtimeAnimatorController is AnimatorController animatorController)
+                if (_animator.runtimeAnimatorController is AnimatorController
+                    animatorController)
                 {
                     var layer = animatorController.layers[0];
                     var states = layer.stateMachine.states;
