@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NBC;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     /// <summary>
     /// 战斗任务运行器

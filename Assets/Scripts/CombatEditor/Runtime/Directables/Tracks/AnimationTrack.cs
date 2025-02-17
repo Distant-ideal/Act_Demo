@@ -1,7 +1,7 @@
 ﻿using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("动画轨道")]
     [Description("这是一个播放动画剪辑的轨道")]

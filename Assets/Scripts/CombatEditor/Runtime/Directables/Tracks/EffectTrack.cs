@@ -1,7 +1,7 @@
 ﻿using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("特效轨道")]
     [Description("播放特效的轨道，粒子特效等")]

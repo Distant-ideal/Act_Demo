@@ -1,6 +1,6 @@
 ﻿using NBC.ActionEditor;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("触发事件")]
     [Description("触发一个事件")]

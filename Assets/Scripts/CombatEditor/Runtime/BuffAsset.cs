@@ -1,7 +1,7 @@
 ﻿using System;
 using NBC.ActionEditor;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("技能Buff")]
     [Serializable]

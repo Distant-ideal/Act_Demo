@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("动画片段")]
     [Description("播放一个动画剪辑的行为")]

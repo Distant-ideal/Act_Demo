@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using NBC.ActionEditorExample;
+using Combat;
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
 public class Init : MonoBehaviour
@@ -31,7 +32,7 @@ public class Init : MonoBehaviour
             };
 
             var Player = GameObject.Find("Player");
-            var hero = Player.GetComponent<HeroPlayer>(); //演示的role脚本直接继承MonoManager，减小代码量
+            var hero = Player.GetComponent<ActorSkill>(); //演示的role脚本直接继承MonoManager，减小代码量
             Debug.Log(Player);
             hero.AddSkill(skill);
             

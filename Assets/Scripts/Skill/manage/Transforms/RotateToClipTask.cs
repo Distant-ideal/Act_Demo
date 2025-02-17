@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     public class RotateToClipTask : SkillClipBase
     {

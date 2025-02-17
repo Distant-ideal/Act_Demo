@@ -4,7 +4,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("盒型碰撞片段")]
     [Description("生成一个盒型碰撞器")]
@@ -18,6 +18,8 @@ namespace NBC.ActionEditorExample
         public string resPath = "";
 
         [MenuName("碰撞大小")] public Vector3 collisionsize;
+
+        [MenuName("位置偏移")] public Vector3 positionoffset;
         private GameObject _collisioObj;
 
         private GameObject boxCollisionClip

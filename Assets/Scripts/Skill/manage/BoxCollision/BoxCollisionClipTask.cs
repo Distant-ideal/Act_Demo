@@ -1,16 +1,23 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     public class BoxCollisionClipTask : SkillClipBase
     {
         private GameObject _collisioObj;
         private BoxCollider _boxCollider;
         private BoxCollision BoxCollision => ActionClip as BoxCollision;
+
+        private Vector3 originalPos;
         protected override void Begin()
         {
             CreateCollision();
+            if (Player.gameObject != null)
+            {
+                originalPos = Player.gameObject.transform.position;
+            }
+
             //播放粒子
             Debug.Log("生成碰撞器");
         }
@@ -30,7 +37,7 @@ namespace NBC.ActionEditorExample
             {
                 _collisioObj = Object.Instantiate(obj);
                 _boxCollider = _collisioObj.GetComponent<BoxCollider>();
-                _collisioObj.transform.position = Vector3.zero;
+                _collisioObj.transform.position = originalPos + BoxCollision.positionoffset;
                 _boxCollider.size = BoxCollision.collisionsize;
             }
         }

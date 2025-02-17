@@ -1,4 +1,4 @@
-﻿namespace NBC.ActionEditorExample
+﻿namespace Combat
 {
     public interface ISkillPlay
     {
@@ -8,7 +8,7 @@
         
         SkillConfig SkillConfig { get; set; }
 
-        RoleBase Player { get; set; }
+        SkillBase Player { get; set; }
         
         void Start();
         void Stop();

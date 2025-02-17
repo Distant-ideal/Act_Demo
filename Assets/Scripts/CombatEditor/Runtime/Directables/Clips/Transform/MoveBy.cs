@@ -2,7 +2,7 @@
 using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("移动")]
     [Description("将对象移动一定距离")]

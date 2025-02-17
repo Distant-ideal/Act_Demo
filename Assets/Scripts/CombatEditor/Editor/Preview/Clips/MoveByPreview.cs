@@ -1,5 +1,5 @@
 ﻿using NBC.ActionEditor;
-using NBC.ActionEditorExample;
+using Combat;
 using UnityEngine;
 
 namespace ActionEditorExample

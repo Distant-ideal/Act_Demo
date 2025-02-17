@@ -2,7 +2,7 @@
 using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("缩放")]
     [Description("缩放剪辑的行为")]

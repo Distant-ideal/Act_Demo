@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CombatEditor\Editor\Preview\Clips\VisibleToPreview.cs" />
+    <Compile Include="Assets\Editor\Artifact\ScriptReferences.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Editor\Preview\Sampler\ParticleSampler.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Editor\PrefabAndObjectManagerEditor.cs" />
     <Compile Include="Assets\InfinityPBR\Editor\SFB_SaveObjectAsMesh.cs" />

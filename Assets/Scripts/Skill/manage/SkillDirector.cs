@@ -1,6 +1,6 @@
 ﻿using NBC.ActionEditor;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     public static class SkillDirector
     {

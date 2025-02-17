@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\AnimationTrack.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\SkillAsset.cs" />
     <Compile Include="Assets\Scripts\Skill\Manage\SkillDirector.cs" />
+    <Compile Include="Assets\Scripts\Player\ActorSkill.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
     <Compile Include="Assets\Scripts\Skill\Manage\Events\TriggerShakeClipTask.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\GrayscaleEffect.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\Scripts\Tasks\TimeStopTask.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightFlicker.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\NoiseEffect.cs" />
+    <Compile Include="Assets\Scripts\Player\SkillBase.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\SFB_AnubisDemo.cs" />
     <Compile Include="Assets\Arab City\Standard Assets\Image Effects (Pro Only)\SSAOEffect.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Tracks\CollisionTrack.cs" />
@@ -110,7 +112,6 @@
     <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
     <Compile Include="Assets\InfinityPBR\Magic Spells &amp; Particles\Scripts\SFB_LightAutoOn.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Event\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Player\HeroPlayer.cs" />
     <Compile Include="Assets\Scripts\Skill\SkillPlayAttack.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Effect\PlayParticle.cs" />
     <Compile Include="Assets\KY_effects\Script\C_ky_simpleDynMat.cs" />
@@ -159,7 +160,6 @@
     <Compile Include="Assets\KY_effects\Script\ThisDestroy.cs" />
     <Compile Include="Assets\InfinityPBR\Demo Scripts\DemoWardrobe.cs" />
     <Compile Include="Assets\InfinityPBR\Equipment System\Scripts\PrefabAndObjectManager.cs" />
-    <Compile Include="Assets\Scripts\Player\RoleBase.cs" />
     <Compile Include="Assets\Scripts\Tasks\RunFunTask.cs" />
     <Compile Include="Assets\Scripts\Combat_Manage\AttackBox.cs" />
     <Compile Include="Assets\Scripts\CombatEditor\Runtime\Directables\Clips\Transform\MoveBy.cs" />

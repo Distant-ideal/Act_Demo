@@ -2,7 +2,7 @@
 using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("显示隐藏")]
     [Description("设置对象的显示或隐藏")]

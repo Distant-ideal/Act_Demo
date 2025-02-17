@@ -1,6 +1,6 @@
 ﻿using NBC.ActionEditor;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("触发震动")]
     [Description("触发一个震动")]

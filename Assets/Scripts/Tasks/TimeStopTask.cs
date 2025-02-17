@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using NBC;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     public class TimeStopTask : NTask
     {

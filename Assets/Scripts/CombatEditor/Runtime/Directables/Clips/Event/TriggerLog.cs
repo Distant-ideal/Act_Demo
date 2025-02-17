@@ -1,6 +1,6 @@
 ﻿using NBC.ActionEditor;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("打印日志")]
     [Description("测试打印一个日志")]

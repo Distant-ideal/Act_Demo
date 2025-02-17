@@ -2,7 +2,7 @@
 using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("旋转角度")]
     [Description("将对象旋转一个角度")]

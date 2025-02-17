@@ -1,7 +1,7 @@
 ﻿using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("碰撞器轨道")]
     [Description("生成各种碰撞器逻辑")]

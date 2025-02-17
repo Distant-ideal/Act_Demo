@@ -1,6 +1,7 @@
 ﻿using System;
+using NBC;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     public class RunFunTask : NTask
     {

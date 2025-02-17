@@ -2,7 +2,9 @@
 using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+using NBC;
+
+namespace Combat
 {
     public class SkillPlayAttack : ISkillPlay
     {
@@ -10,7 +12,7 @@ namespace NBC.ActionEditorExample
         private ParallelTaskCollection _sequence;
 
         public SkillConfig SkillConfig { get; set; }
-        public RoleBase Player { get; set; }
+        public SkillBase Player { get; set; }
 
         public void Start()
         {

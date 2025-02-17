@@ -1,6 +1,7 @@
 ﻿using NBC.ActionEditor;
+using NBC;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     public abstract class SkillClipBase : NTask
     {
@@ -43,7 +44,7 @@ namespace NBC.ActionEditorExample
         protected SkillConfig SkillConfig;
 
         //owen
-        protected RoleBase Player;
+        protected SkillBase Player;
 
 
         protected ActionClip ActionClip;
@@ -58,7 +59,7 @@ namespace NBC.ActionEditorExample
             SkillConfig = skillConfig;
         }
 
-        public void SetPlayer(RoleBase player)
+        public void SetPlayer(SkillBase player)
         {
             Player = player;
         }

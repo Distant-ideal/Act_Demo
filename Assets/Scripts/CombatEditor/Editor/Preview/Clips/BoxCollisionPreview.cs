@@ -1,5 +1,5 @@
 ﻿using NBC.ActionEditor;
-using NBC.ActionEditorExample;
+using Combat;
 using UnityEngine;
 using UnityEditor;
 
@@ -45,7 +45,10 @@ namespace ActionEditorExample
             {
                 _collisioObj = Object.Instantiate(obj);
                 _boxCollider = _collisioObj.GetComponent<BoxCollider>();
-                _collisioObj.transform.position = Vector3.zero;
+                Debug.Log(ModelSampler.EditModel.transform.position);
+                Debug.Log(clip.positionoffset);
+                Debug.Log(ModelSampler.EditModel.transform.position + clip.positionoffset);
+                _collisioObj.transform.position = ModelSampler.EditModel.transform.position + clip.positionoffset;
                 _boxCollider.size = clip.collisionsize;
             }
         }

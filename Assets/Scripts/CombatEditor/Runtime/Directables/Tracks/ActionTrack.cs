@@ -2,7 +2,7 @@ using System;
 using NBC.ActionEditor;
 using UnityEngine;
 
-namespace NBC.ActionEditorExample
+namespace Combat
 {
     [Name("行为轨道")]
     [Description("这是一个行为轨道")]

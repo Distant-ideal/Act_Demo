@@ -1,4 +1,4 @@
-﻿namespace NBC.ActionEditorExample
+﻿namespace Combat
 {
     /// <summary>
     /// 技能配置，（模拟真实项目存在的技能数值配置）
