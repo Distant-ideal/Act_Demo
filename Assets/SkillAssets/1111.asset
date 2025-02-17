@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 7463114373690022362}
-  startTime: 0.1
+  startTime: 1.4
   length: 1
   resPath: Assets/Character/BoxCollider.prefab
   collisionsize: {x: 2, y: 2, z: 2}
@@ -107,6 +107,7 @@ MonoBehaviour:
   startTime: 0.1
   length: 1.2
   resPath: Assets/KY_effects/AMFX01/P_AMFX01_goldExp.prefab
+  positionoffset: {x: -3, y: 0, z: 0}
   scale: 0
 --- !u!114 &-5232063271293772240
 MonoBehaviour:
@@ -195,6 +196,7 @@ MonoBehaviour:
   startTime: 0.3
   length: 1
   resPath: Assets/Arab City/Destroyed City/Model/Add on/ac.fbx
+  positionoffset: {x: 0, y: 0, z: 0}
   scale: 0
 --- !u!114 &11400000
 MonoBehaviour:

@@ -17,8 +17,8 @@ namespace Combat
         [MenuName("特效对象")] [SelectObjectPath(typeof(GameObject))]
         public string resPath = "";
 
+        [MenuName("位置偏移")] public Vector3 positionoffset;
         [MenuName("是否变形")] public bool scale;
-
         private GameObject _effectObject;
 
         private GameObject audioClip

@@ -58,7 +58,7 @@ namespace ActionEditorExample
         {
             if (_effectObj != null)
             {
-                _effectObj.gameObject.SetActive(false);
+                GameObject.DestroyImmediate(_effectObj.gameObject);
             }
         }
 
@@ -85,8 +85,10 @@ namespace ActionEditorExample
             var obj = AssetDatabase.LoadAssetAtPath<GameObject>(clip.resPath);
             if (obj != null)
             {
+                GameObject effectlist = GameObject.Find("EffectList");
                 _effectObj = Object.Instantiate(obj);
-                _effectObj.transform.position = Vector3.zero;
+                _effectObj.transform.parent = effectlist.transform;
+                _effectObj.transform.position = ModelSampler.EditModel.transform.position + clip.positionoffset;;
                 //演示代码只演示原地播放，挂点播放等需要自行编写挂点相关脚本和设置挂点
             }
         }
