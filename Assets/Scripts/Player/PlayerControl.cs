@@ -25,21 +25,6 @@ namespace Player {
         // 动画
         public Animator Animator1;
 
-        // 普攻阶段
-        private int NormalAttackNum = 0;
-
-        // 是否在攻击状态
-        private bool IsAttackState = false;
-
-        // 是否在攻击状态
-        private bool CanMove = true;
-
-        // 是否在地面
-        public bool IsGround = true;
-
-        // 是否在地面
-        public bool IsDodge = false;
-
         // 伤害触发器位置
         public Transform HitLocation;
 
@@ -50,9 +35,11 @@ namespace Player {
 
         private bool IsBeAttack = false;
 
+        public PlayerState playerState;
+
         void Awake()
         {
-
+            playerState = new PlayerState();
         }
 
         // Start is called before the first frame update
@@ -95,7 +82,7 @@ namespace Player {
             // 检测输入
             if (Direction.magnitude >= 0.1f)
             {
-                if (!IsAttackState && CanMove)
+                if (!playerState.IsAttackState && playerState.CanMove)
                 {
                     //Animator1.SetBool("Run", true);
                     Animator1.SetFloat("Speed", Direction.magnitude);
@@ -148,9 +135,9 @@ namespace Player {
         // 回复移动状态
         public void RestoreMoveState(AnimationEvent AnimationEvent1)
         {
-            if (NormalAttackNum == AnimationEvent1.intParameter || AnimationEvent1.stringParameter == "dodge_end")
+            if (AnimationEvent1.stringParameter == "dodge_end")
             {
-                CanMove = true;
+                playerState.CanMove = true;
                 Animator1.SetBool("CanMove", true);
             }
         }
@@ -158,13 +145,13 @@ namespace Player {
         // 跳跃
         public void Jump()
         {
-            if (CanMove && !IsDodge)
+            if (playerState.CanMove && !playerState.IsDodge)
             {
-                if (IsGround && Input.GetKeyDown(KeyCode.Space))
+                if (playerState.IsGround && Input.GetKeyDown(KeyCode.Space))
                 {
                     Animator1.SetBool("IsGround", false);
                     Animator1.CrossFade("Jump", 0.1f);
-                    IsGround = false;
+                    playerState.IsGround = false;
                     Invoke("JumpEnd", 1.0f);
                 }
             }
@@ -173,18 +160,18 @@ namespace Player {
         // 跳跃结束
         public void JumpEnd()
         {
-            IsGround = true;
+            playerState.IsGround = true;
             Animator1.SetBool("IsGround", true);
         }
 
         // 闪避事件
         public void Dodge()
         {
-            if (IsGround)
+            if (playerState.IsGround)
             {
-                if (Input.GetKeyDown(KeyCode.LeftShift) && !IsDodge)
+                if (Input.GetKeyDown(KeyCode.LeftShift) && !playerState.IsDodge)
                 {
-                    IsDodge = true;
+                    playerState.IsDodge = true;
                     Animator1.CrossFade("dodge_back", 0f);
                     Invoke("DodgeEnd", 0.5f);
                     // AttackEnd();
@@ -195,7 +182,7 @@ namespace Player {
         // 闪避事件
         public void DodgeEnd()
         {
-            IsDodge = false;
+            playerState.IsDodge = false;
             // 延迟清空攻击连段
             // CancelInvoke("ClearAttackState");
             // Invoke("ClearAttackState", ClearAttackStateTime);
@@ -203,7 +190,7 @@ namespace Player {
 
         public void GetHit()
         {
-            if (!IsDodge)
+            if (!playerState.IsDodge)
             {
                 IsBeAttack = true;
 
