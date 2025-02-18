@@ -35,7 +35,10 @@ namespace Combat
             var obj = AssetDatabase.LoadAssetAtPath<GameObject>(BoxCollision.resPath);
             if (obj != null)
             {
+                GameObject boxcoliderlist = GameObject.Find("BoxColiderList");
                 _collisioObj = Object.Instantiate(obj);
+                _collisioObj.transform.parent = boxcoliderlist.transform;
+                
                 _boxCollider = _collisioObj.GetComponent<BoxCollider>();
                 _collisioObj.transform.position = originalPos + BoxCollision.positionoffset;
                 _boxCollider.size = BoxCollision.collisionsize;

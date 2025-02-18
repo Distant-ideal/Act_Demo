@@ -18,6 +18,16 @@ namespace ActionEditorExample
         {
         }
 
+        public override void ReverseEnter()
+        {
+            Debug.Log("ReverseEnter");
+        }
+
+        public override void Reverse()
+        {
+            Debug.Log("Reverse");
+        }
+
         
         public override void Enter()
         {
@@ -33,7 +43,7 @@ namespace ActionEditorExample
         {
             if (_collisioObj != null)
             {
-                _collisioObj.gameObject.SetActive(false);
+                GameObject.DestroyImmediate(_collisioObj.gameObject);
             }
         }
 
@@ -43,11 +53,10 @@ namespace ActionEditorExample
             var obj = AssetDatabase.LoadAssetAtPath<GameObject>(clip.resPath);
             if (obj != null)
             {
+                GameObject boxcoliderlist = GameObject.Find("BoxColiderList");
                 _collisioObj = Object.Instantiate(obj);
+                _collisioObj.transform.parent = boxcoliderlist.transform;
                 _boxCollider = _collisioObj.GetComponent<BoxCollider>();
-                Debug.Log(ModelSampler.EditModel.transform.position);
-                Debug.Log(clip.positionoffset);
-                Debug.Log(ModelSampler.EditModel.transform.position + clip.positionoffset);
                 _collisioObj.transform.position = ModelSampler.EditModel.transform.position + clip.positionoffset;
                 _boxCollider.size = clip.collisionsize;
             }

@@ -54,8 +54,25 @@ MonoBehaviour:
   length: 1
   resPath: Assets/Character/BoxCollider.prefab
   collisionsize: {x: 2, y: 2, z: 2}
-  positionoffset: {x: 3, y: 2, z: 0}
+  positionoffset: {x: 0, y: 0, z: 0}
 --- !u!114 &-5987002376436826915
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2749d90b133472da797f5201e53720, type: 3}
+  m_Name: New Group
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 11400000}
+  tracks: []
+  isCollapsed: 0
+  active: 1
+  isLocked: 0
+--- !u!114 &-5868134137193350208
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,6 +108,24 @@ MonoBehaviour:
   blendOut: 0.25
   resPath: Assets/Animation/Player/Run.anim
   playbackSpeed: 3.48
+--- !u!114 &-5652627016649086332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6027f6fd448cc5e459e1fcc45bdae376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 8126607791863147575}
+  startTime: 0.1
+  length: 1
+  resPath: Assets/Character/BoxCollider.prefab
+  collisionsize: {x: 1, y: 1, z: 1}
+  positionoffset: {x: 0, y: 0, z: 0}
 --- !u!114 &-5492265459295539579
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,7 +346,7 @@ MonoBehaviour:
   - {fileID: -6316500417821866595}
   - {fileID: 7474446336851467446}
   - {fileID: -3589767398891925088}
-  - {fileID: 7463114373690022362}
+  - {fileID: 8126607791863147575}
   isCollapsed: 0
   active: 1
   isLocked: 0
@@ -355,6 +390,25 @@ MonoBehaviour:
   Test1: 0
   Test2: 0
   Test3: 
+--- !u!114 &8126607791863147575
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6d1877fa328f54a97a936aaf61254c, type: 3}
+  m_Name: CollisionTrack
+  m_EditorClassIdentifier: 
+  _parent: {fileID: 7193246385372206122}
+  actionClips:
+  - {fileID: -5652627016649086332}
+  active: 1
+  isLocked: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  Layer: 0
 --- !u!114 &8781944223014173283
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4377076753289794098}
   - component: {fileID: 2253773602625058366}
-  - component: {fileID: 4929385336195026853}
-  - component: {fileID: 258383231018422247}
+  - component: {fileID: 3768997592514183420}
+  - component: {fileID: 4348207248579817932}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4929385336195026853
+--- !u!114 &3768997592514183420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,8 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 5, z: -10}
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 1
---- !u!114 &258383231018422247
+--- !u!114 &4348207248579817932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825129839092994379}
-  - component: {fileID: 8067166813617354944}
+  - component: {fileID: 7938022041733364643}
   m_Layer: 0
   m_Name: BottomRig
   m_TagString: Untagged
@@ -160,7 +160,7 @@ Transform:
   - {fileID: 4377076753289794098}
   m_Father: {fileID: 2850921347305143630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8067166813617354944
+--- !u!114 &7938022041733364643
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 47.15
+    FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -216,8 +216,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3784858218541442539}
   - component: {fileID: 8528006141841720330}
-  - component: {fileID: 1618656845547368139}
-  - component: {fileID: 1043316168334863446}
+  - component: {fileID: 8108929765226706623}
+  - component: {fileID: -5815130174253917917}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1618656845547368139
+--- !u!114 &8108929765226706623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,8 +264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 5, z: -10}
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 1
---- !u!114 &1043316168334863446
+--- !u!114 &-5815130174253917917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6931579444206296810}
-  - component: {fileID: 3233126711178156611}
+  - component: {fileID: -5453571069009142551}
   m_Layer: 0
   m_Name: TopRig
   m_TagString: Untagged
@@ -366,7 +366,7 @@ Transform:
   - {fileID: 1352442726186765479}
   m_Father: {fileID: 2850921347305143630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3233126711178156611
+--- !u!114 &-5453571069009142551
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 47.15
+    FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -422,8 +422,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1352442726186765479}
   - component: {fileID: 4063309186309252129}
-  - component: {fileID: 162194086547838770}
-  - component: {fileID: 4012348390626654498}
+  - component: {fileID: 7647583997366388238}
+  - component: {fileID: -6479687742602131452}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &162194086547838770
+--- !u!114 &7647583997366388238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,8 +470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 5, z: -10}
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 1
---- !u!114 &4012348390626654498
+--- !u!114 &-6479687742602131452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6413040961249501330}
-  - component: {fileID: 7834467001070441753}
+  - component: {fileID: -7082701086665293433}
   m_Layer: 0
   m_Name: MiddleRig
   m_TagString: Untagged
@@ -572,7 +572,7 @@ Transform:
   - {fileID: 3784858218541442539}
   m_Father: {fileID: 2850921347305143630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7834467001070441753
+--- !u!114 &-7082701086665293433
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 47.15
+    FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -755,6 +755,6 @@ MonoBehaviour:
     m_Radius: 10
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
-  - {fileID: 3233126711178156611}
-  - {fileID: 7834467001070441753}
-  - {fileID: 8067166813617354944}
+  - {fileID: -5453571069009142551}
+  - {fileID: -7082701086665293433}
+  - {fileID: 7938022041733364643}

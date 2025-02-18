@@ -16,6 +16,10 @@ namespace Combat
             {
                 classInst = new PlayParticleClipTask();
             }
+            else if (clip is BoxCollision)
+            {
+                classInst = new BoxCollisionClipTask();
+            }
             else if (clip is MoveBy)
             {
                 classInst = new MoveByClipTask();
